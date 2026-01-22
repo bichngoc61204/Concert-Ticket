@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Public reads for app
+    match /cities/{cityId} {
+      allow read, write: if isSignedIn();
+    }
+
+    match /events/{eventId} {
+      allow read, write: if isSignedIn();
+    }
+
+    match /sections/{sectionId} {
+      allow read, write: if isSignedIn();
+    }
+
+    match /users/{userId} {
+      // Cho phép app đăng ký/đăng nhập qua collection users (không yêu cầu auth)
+      allow read, write: if true;
+    }
+
+    match /orders/{orderId} {
+      allow read, write: if isSignedIn();
+    }
+
+    // Fallback deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

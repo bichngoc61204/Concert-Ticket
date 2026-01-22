@@ -1,0 +1,98 @@
+{
+  "cities": [
+    { "id": "hanoi", "name": "Hà Nội", "country": "Việt Nam" },
+    { "id": "hcmc", "name": "TP. Hồ Chí Minh", "country": "Việt Nam" },
+    { "id": "danang", "name": "Đà Nẵng", "country": "Việt Nam" },
+    { "id": "haiphong", "name": "Hải Phòng", "country": "Việt Nam" },
+    { "id": "nhatrang", "name": "Nha Trang", "country": "Việt Nam" },
+    { "id": "hue", "name": "Huế", "country": "Việt Nam" },
+    { "id": "cantho", "name": "Cần Thơ", "country": "Việt Nam" }
+  ],
+  "events": [
+    {
+      "id": "indie-night-b",
+      "title": "Indie Night B",
+      "cityId": "hcmc",
+      "venue": "Nhà hát Hòa Bình",
+      "date": "2025-12-05",
+      "time": "20:00",
+      "description": "Sự kiện indie với những nghệ sĩ trẻ triển vọng.",
+      "bannerUrl": "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1600&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1600&auto=format&fit=crop",
+      "artists": ["Vũ", "Thịnh Suy", "Kai Đinh"]
+    },
+    {
+      "id": "edm-fest-c",
+      "title": "EDM Fest C",
+      "cityId": "danang",
+      "venue": "Cung thể thao Tiên Sơn",
+      "date": "2026-01-10",
+      "time": "18:00",
+      "description": "Lễ hội EDM bùng nổ tại Đà Nẵng.",
+      "bannerUrl": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1600&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1600&auto=format&fit=crop",
+      "artists": ["Masew", "Hoaprox", "Monotape"]
+    },
+    {
+      "id": "jazz-hue",
+      "title": "Hue Jazz Night",
+      "cityId": "hue",
+      "venue": "Nhà hát Trưng Vương Huế",
+      "date": "2026-02-20",
+      "time": "19:30",
+      "description": "Đêm nhạc Jazz êm dịu với khách mời quốc tế.",
+      "bannerUrl": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1600&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1600&auto=format&fit=crop",
+      "artists": ["Tùng Dương", "Minh Đức Jazz Band"]
+    },
+    {
+      "id": "rock-north",
+      "title": "Rock the North",
+      "cityId": "hanoi",
+      "venue": "SVĐ Mỹ Đình",
+      "date": "2026-03-15",
+      "time": "19:00",
+      "description": "Rock tour quy tụ nhiều ban nhạc miền Bắc.",
+      "bannerUrl": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1600&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1446054947484-fd9bdc9640f5?q=80&w=1600&auto=format&fit=crop",
+      "artists": ["Ngũ Cung", "Bức Tường", "Microwave"]
+    }
+  ],
+  "sections": [
+    { "id": "edm-fest-c-golden", "eventId": "edm-fest-c", "name": "Golden Circle", "price": 1800000, "totalSlots": 150, "availableSlots": 150 },
+    { "id": "edm-fest-c-general", "eventId": "edm-fest-c", "name": "General", "price": 800000, "totalSlots": 600, "availableSlots": 592 },
+    { "id": "indie-night-b-vip", "eventId": "indie-night-b", "name": "VIP", "price": 900000, "totalSlots": 120, "availableSlots": 120 },
+    { "id": "indie-night-b-stand", "eventId": "indie-night-b", "name": "Stand", "price": 450000, "totalSlots": 400, "availableSlots": 400 },
+    { "id": "jazz-hue-front", "eventId": "jazz-hue", "name": "Front", "price": 700000, "totalSlots": 200, "availableSlots": 200 },
+    { "id": "jazz-hue-back", "eventId": "jazz-hue", "name": "Back", "price": 400000, "totalSlots": 300, "availableSlots": 300 },
+    { "id": "rock-north-floor", "eventId": "rock-north", "name": "Floor", "price": 650000, "totalSlots": 800, "availableSlots": 800 }
+  ],
+  "orders": [
+    {
+      "id": "order-sample-1",
+      "orderId": "ORDER-1764884745305",
+      "eventId": "edm-fest-c",
+      "eventTitle": "EDM Fest C",
+      "sectionId": "edm-fest-c-golden",
+      "sectionName": "Golden Circle",
+      "quantity": 1,
+      "unitPrice": 1800000,
+      "totalPrice": 1800000,
+      "paymentMethod": "vnpay_qr",
+      "qrCodeUrl": "https://img.vietqr.io/image/970436-0123456789-qr_only.png?amount=1800000&addInfo=Thanh%20toan%20ve%20EDM%20Fest%20C&accountName=NGUYEN%20VAN%20A",
+      "status": "completed",
+      "userId": "1763565837400",
+      "createdAt": "2025-12-05T04:45:46+07:00"
+    }
+  ],
+  "users": [
+    {
+      "id": "1763565837400",
+      "email": "hung@gmail.com",
+      "name": "hung",
+      "phone": "",
+      "createdAt": "2025-11-19T22:23:58+07:00"
+    }
+  ]
+}
+
